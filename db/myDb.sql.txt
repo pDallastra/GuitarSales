@@ -1,0 +1,38 @@
+CREATE DATABASE guitarSales;
+
+CREATE TABLE PRODUCTS(
+    Products_id PRIMARY KEY (JazzBass_id, StratoCaster_id),
+
+    JazzBass varchar(20) NOT NULL,
+    StratoCaster varchar(20) NOT NULL,
+);
+
+CREATE TABLE BODY(
+    Body_id PRIMARY KEY (Body_White, Body_Black),
+
+    Body_White varchar(20) NOT NULL,
+    Body_Black varchar(20) NOT NULL,
+);
+
+CREATE TABLE PICKUP(
+    PickUp_id PRIMARY KEY (PickUp_White, PickUp_Black),
+
+    PickUp_White varchar(20) NOT NULL,
+    PickUp_Black varchar(20) NOT NULL,
+);
+
+CREATE TABLE SHIELD(
+    Shield_id PRIMARY KEY (Shield_White, Shield_Black),
+
+    Shield_White varchar(20) NOT NULL,
+    Shield_Black varchar(20) NOT NULL,
+);
+
+CREATE TABLE ORDER(
+    Order_id SERIAL NOT NULL PRIMARY KEY,
+
+    Products_id varchar(20) NOT NULL REFERENCES PRODUCTS(JazzBass_id, StratoCaster_id),
+    Body_id varchar(20) NOT NULL REFERENCES BODY(Body_White, Body_Black),
+    PickUp_id varchar(20) NOT NULL REFERENCES PICKUP(PickUp_White, PickUp_Black),
+    Shield_id varchar(20) NOT NULL REFERENCES SHIELD(PickUp_White, PickUp_Black),
+);
