@@ -1,0 +1,12 @@
+19-10-18 12:53:19.0191962 pid:11428 tid:1 sqltools Critical: 0 : An unhandled exception occurred: System.IO.FileLoadException: 
+File name: 'Microsoft.SqlServer.Management.SqlParser, Version=15.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'
+   at Microsoft.SqlTools.ServiceLayer.LanguageServices.LanguageService..ctor()
+   at Microsoft.SqlTools.ServiceLayer.LanguageServices.LanguageService.<>c.<.cctor>b__97_0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.InitializeRequestHandlersAndServices(ServiceHost serviceHost, SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.CreateAndStartServiceHost(SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.Program.Main(String[] args)
+
+
