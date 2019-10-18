@@ -1,0 +1,13 @@
+.sideBar {
+    float: left;
+    height: 600rem;
+    width: 20%; 
+}
+
+a {
+    color: white;
+}
+
+body {
+    background-color: steelblue;
+}
