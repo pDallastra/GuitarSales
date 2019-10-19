@@ -14,10 +14,12 @@
     <?php require_once('navbar.php'); ?>
     <!-- Products -->
     <?php
+
+      echo "18"
           // echo "HERE!!!";
           require "database.php";
           $db = get_db();
-          
+      echo "22"
           foreach ($db->query('-- Select allergies from one user
   SELECT
       guitar_name,
