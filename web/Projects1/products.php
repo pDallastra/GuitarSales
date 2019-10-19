@@ -1,4 +1,14 @@
+
 <!DOCTYPE html>
+<?php
+
+echo "18";
+
+require "database.php";
+echo "22";
+$db = get_db();
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,11 +25,7 @@
     <!-- Products -->
     <?php
 
-      echo "18";
-
-          require "database.php";
-          echo "22";
-          $db = get_db();
+    
 
       echo "25";
           foreach ($db->query('
