@@ -15,7 +15,8 @@
     <!-- Products -->
     <?php
           // echo "HERE!!!";
-          require = "database.php";
+          require "database.php";
+          
           foreach ($db->query('-- Select allergies from one user
   SELECT
       guitar_name,
