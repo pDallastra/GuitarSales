@@ -4,7 +4,7 @@
 
 echo "18";
 
-require "database.php";
+require_once('database.php');
 echo "22";
 $db = get_db();
 
