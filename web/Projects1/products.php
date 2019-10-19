@@ -16,6 +16,7 @@
     <?php
           // echo "HERE!!!";
           require "database.php";
+          $db = get_db();
           
           foreach ($db->query('-- Select allergies from one user
   SELECT
