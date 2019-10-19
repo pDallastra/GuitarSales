@@ -15,13 +15,13 @@
     <!-- Products -->
     <?php
 
-      echo "18"
-      
+      echo "18";
+
           // echo "HERE!!!";
           require "database.php";
           $db = get_db();
 
-      echo "22"
+      echo "22";
           foreach ($db->query('
   SELECT
       guitar_name,
