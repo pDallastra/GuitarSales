@@ -17,7 +17,6 @@
 
       echo "18";
 
-          // echo "HERE!!!";
           require "database.php";
           echo "22";
           $db = get_db();
