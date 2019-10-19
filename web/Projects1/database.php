@@ -1,11 +1,12 @@
 <?php
 
 function get_db() {
+  echo "db4"
 try
 {
-  echo "db6";
+  echo "db7";
   $dbUrl = getenv('DATABASE_URL');
-  echo "db8";
+  echo "db9";
   $dbOpts = parse_url($dbUrl);
 
   $dbHost = $dbOpts["host"];
