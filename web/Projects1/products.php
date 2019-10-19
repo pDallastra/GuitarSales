@@ -15,7 +15,7 @@
     <!-- Products -->
     <?php
           // echo "HERE!!!";
-
+          require = "database.php";
           foreach ($db->query('-- Select allergies from one user
   SELECT
       guitar_name,
@@ -133,6 +133,7 @@
               </div>
             </div>
           </section>
+          
     <?php require_once('footer.php'); ?>
 </body>
 </html>
