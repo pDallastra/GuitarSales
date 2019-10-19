@@ -38,5 +38,5 @@ CREATE TABLE ORDER(
     order_id                SERIAL          NOT NULL PRIMARY KEY
 ,   order_date              date            NOT NULL
 
-,   customer_id       
+,   customer_id       	    INT		    NOT FULL
 );

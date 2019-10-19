@@ -8,14 +8,14 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="story.php">Our Story</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="products.php">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#">Chart</a>
       </li>
     </ul>
     <form class="form-inline">
