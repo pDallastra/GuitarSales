@@ -13,6 +13,24 @@
 <body>
     <?php require_once('navbar.php'); ?>
     <!-- Products -->
+    <?php
+          // echo "HERE!!!";
+
+          foreach ($db->query('-- Select allergies from one user
+  SELECT
+      guitar_name,
+      guitar_price,
+
+  FROM
+      GUITAR') as $row) {
+
+            echo'
+          <div class="d-flex flex-column ml-2">
+            <h5 class="card-title text-center">'. ucfirst($row['guitar_name']) . '</h5>
+            <a href="#" class="btn btn-primary btn-md ">See Description</a>
+          </div>';
+          }
+          ?>
     <section class="pricing py-5">
             <div class="container">
               <div class="row">
