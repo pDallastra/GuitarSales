@@ -19,9 +19,10 @@
 
           // echo "HERE!!!";
           require "database.php";
+          echo "22";
           $db = get_db();
 
-      echo "22";
+      echo "25";
           foreach ($db->query('
   SELECT
       guitar_name,
