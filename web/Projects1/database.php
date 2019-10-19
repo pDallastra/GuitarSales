@@ -28,3 +28,4 @@ catch (PDOException $ex)
 echo "aqui!"
 return $db;
 }
+?>
