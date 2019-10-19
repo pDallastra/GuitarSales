@@ -1,5 +1,5 @@
 <?php
-
+echo "2";
 function get_db() {
   echo "db4"
 try
