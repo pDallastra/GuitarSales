@@ -1,3 +1,7 @@
+<?php
+require "database.php";
+$db = get_db();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,110 +17,35 @@
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-
-    <section class="pricing py-5">
-            <div class="container">
-              <div class="row">
-                <!-- Red Strato -->
-                <div class="col-lg-4">
-                  <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                            <img src="strato1.png" class="card-img-top" alt="...">
-                      <h6 class="card-price text-center">$299</h6>
-                      <hr>
-                      <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Red Ash Body</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUp Shield</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
-                      </ul>
-                      <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                    </div>
-                  </div>
+    
+    <?php
+          foreach ($db->query('SELECT *
+                               FROM   PRODUCT_ORDER
+                               JOIN GUITAR ON PRODUCT_ORDER.guitar_id = GUITAR.id
+                               JOIN BODY   ON PRODUCT_ORDER.color_id  = BODY.id') as $row) 
+          {
+            echo '<section class="pricing py-5">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                        <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                  <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
+                  </ul>
+                  <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
                 </div>
-                <!-- Black Strato -->
-                <div class="col-lg-4">
-                        <div class="card mb-5 mb-lg-0">
-                          <div class="card-body">
-                                  <img src="strato2.png" class="card-img-top" alt="...">
-                            <h6 class="card-price text-center">$299</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Black Ash Body</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUp Shield</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                <!-- White Strato -->
-                <div class="col-lg-4">
-                        <div class="card mb-5 mb-lg-0">
-                          <div class="card-body">
-                                  <img src="strato3.png" class="card-img-top" alt="...">
-                            <h6 class="card-price text-center">$299</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White Ash Body</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Black PickUp Shield</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                <!-- TeleCaster -->
-                <div class="col-lg-4">
-                        <div class="card mb-5 mb-lg-0">
-                          <div class="card-body">
-                                  <img src="tele1.png" class="card-img-top" alt="...">
-                            <h6 class="card-price text-center">$299</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red Ash Body</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red PickUp Shield</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                <!-- Free Tier -->
-                <div class="col-lg-4">
-                        <div class="card mb-5 mb-lg-0">
-                          <div class="card-body">
-                                  <img src="tele2.png" class="card-img-top" alt="...">
-                            <h6 class="card-price text-center">$299</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red Ash Body</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUp Shield</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span> PickUps</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
-                <!-- Free Tier -->
-                <div class="col-lg-4">
-                        <div class="card mb-5 mb-lg-0">
-                          <div class="card-body">
-                                  <img src="tele3.png" class="card-img-top" alt="...">
-                            <h6 class="card-price text-center">$299</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red Ash Body</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red PickUp Shield</li>
-                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
-                            </ul>
-                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
-                          </div>
-                        </div>
-                      </div>
               </div>
             </div>
-          </section>
-          
+    </div>
+  </div>
+</section>';
+          }
+          ?>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
