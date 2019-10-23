@@ -30,8 +30,8 @@ $db = get_db();
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                        <img src="' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
-                  <h6 class="card-price text-center">' . ucfirst($row['price']) . '</h6>
+                        <img src="/img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                  <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
                   <hr>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
