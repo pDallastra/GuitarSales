@@ -21,12 +21,9 @@ $db = get_db();
     <?php
           // echo "HERE!!!";
           echo "line 23";
-          foreach ($db->query('SELECT guitar.name, guitar.price, body.color 
-                               FROM   PRODUCT_ORDER 
-                               JOIN GUITAR ON PRODUCT_ORDER.guitar_id = BODY.id
-                               JOIN BODY ON PRODUCT_ORDER.color_id = BODY.id') as $row) 
+          foreach ($db->query('SELECT guitar_id, color_id
+                               FROM   PRODUCT_ORDER') as $row) 
           {
-            echo "line 29";
             echo '
           <div class="d-flex flex-column ml-2">
             <h5 class="card-title text-center">'. ucfirst($row['name']) . '</h5>
