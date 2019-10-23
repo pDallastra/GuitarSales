@@ -20,18 +20,13 @@ $db = get_db();
     
     <?php
           // echo "HERE!!!";
-
-          foreach ($db->query('SELECT
-      guitar.name,
-      guitar.price,
-      body.color
-  FROM
-      PRODUCT_ORDER
-      JOIN GUITAR ON PRODUCT_ORDER.guitar_id = BODY.id
-      JOIN BODY ON PRODUCT_ORDER.color_id = BODY.id
-      ') as $row) {
-
-            echo'
+          echo "line 23";
+          foreach ($db->query('SELECT guitar.name, guitar.price, body.color 
+                               FROM   PRODUCT_ORDER 
+                               JOIN GUITAR ON PRODUCT_ORDER.guitar_id = BODY.id
+                               JOIN BODY ON PRODUCT_ORDER.color_id = BODY.id') as $row) 
+          {
+            echo '
           <div class="d-flex flex-column ml-2">
             <h5 class="card-title text-center">'. ucfirst($row['name']) . '</h5>
             <a href="#" class="btn btn-primary btn-md ">See Description</a>
