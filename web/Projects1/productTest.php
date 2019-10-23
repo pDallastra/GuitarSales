@@ -24,11 +24,6 @@ $db = get_db();
                                JOIN GUITAR ON PRODUCT_ORDER.guitar_id = GUITAR.id
                                JOIN BODY   ON PRODUCT_ORDER.color_id  = BODY.id') as $row) 
           {
-            echo '
-          <div class="d-flex flex-column ml-2">
-            <h5 class="card-title text-center">'. ucfirst($row['name']) . '</h5>
-            <a href="#" class="btn btn-primary btn-md ">Add to Cart</a>
-          </div>';
             echo '<section class="pricing py-5">
             <div class="container">
               <div class="row">
