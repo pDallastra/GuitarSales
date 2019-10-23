@@ -7,21 +7,21 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/guitar.png" class="d-block w-100" style="width:100%;height: 57.6rem;background-color: black;" alt="...">
+        <img src="img/guitar.png" class="d-block w-100" style="width:100%;height: 40rem; alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Add#1</h5>
           <p>Buy Any Product And Get 20% OFF On The Second Product!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/guitar2.png" class="d-block w-100" style="width:100%;height: 57.6rem;background-color: black;" alt="...">
+        <img src="img/guitar2.png" class="d-block w-100" style="width:100%;height: 40rem; alt="...">
         <div class="carousel-caption d-none d-md-block">
         <h5>Add#2</h5>
           <p>Buy A Guitar Over $300 And Get 40% OFF On The Second One</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/bass.png" class="d-block w-100" style="width:100%;height: 57.6rem;background-color: black;" alt="...">
+        <img src="img/bass.png" class="d-block w-100" style="width:100%;height: 40rem; alt="...">
         <div class="carousel-caption d-none d-md-block">
         <h5>Add#3</h5>
           <p>Buy Any Instrument And Get 50% Off On a Different One</p>
