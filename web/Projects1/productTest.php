@@ -1,3 +1,7 @@
+<?php
+require "database.php";
+$db = get_db();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
