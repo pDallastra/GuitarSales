@@ -21,8 +21,10 @@ $db = get_db();
     <?php
           // echo "HERE!!!";
           echo "line 23";
-          foreach ($db->query('SELECT guitar_id, color_id
-                               FROM   PRODUCT_ORDER') as $row) 
+          foreach ($db->query('SELECT *
+                               FROM   PRODUCT_ORDER
+                               JOIN GUITAR ON PRODUCT_ORDER.guitar_id = GUITAR.id
+                               JOIN BODY   ON PRODUCT_ORDER.color_id  = BODY.id') as $row) 
           {
             echo '
           <div class="d-flex flex-column ml-2">
