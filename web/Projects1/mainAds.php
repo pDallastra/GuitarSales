@@ -7,14 +7,14 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/guitar.png" class="d-block w-100" style="width:180rem;height: 51rem; alt="...">
+        <img src="img/guitar.png" class="d-block" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Promo #1</h5>
           <p>Buy Any Product And Get 20% OFF On The Second Product!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/guitar2.png" class="d-block w-100" style="width:180rem;height: 51rem; alt="...">
+        <img src="img/guitar2.png" class="d-block" style="width:180rem;height: 51rem; alt="...">
         <div class="carousel-caption d-none d-md-block">
         <h5>Promo #2</h5>
           <p>Buy A Guitar Over $300 And Get 40% OFF On The Second One</p>
