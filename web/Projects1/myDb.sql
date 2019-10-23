@@ -12,6 +12,8 @@ CREATE TABLE BODY(
 
 CREATE TABLE PRODUCT_ORDER(
     id          SERIAL          NOT NULL PRIMARY KEY,
+    img         text            NOT NULL,
+    
     guitar_id   INT             NOT NULL REFERENCES guitar(id),
     color_id    INT             NOT NULL REFERENCES body(id)
 
