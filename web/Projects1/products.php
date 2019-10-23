@@ -20,7 +20,7 @@ $db = get_db();
     
     <?php
           foreach ($db->query('SELECT *
-                               FROM   PRODUCT_ORDER
+                               FROM   GUITAR_BODY
                                JOIN GUITAR ON PRODUCT_ORDER.guitar_id = GUITAR.id
                                JOIN BODY   ON PRODUCT_ORDER.color_id  = BODY.id') as $row) 
           {
