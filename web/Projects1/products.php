@@ -20,9 +20,9 @@ $db = get_db();
     
     <?php
           foreach ($db->query('SELECT *
-                               FROM   GUITAR_BODY
-                               JOIN GUITAR ON PRODUCT_ORDER.guitar_id = GUITAR.id
-                               JOIN BODY   ON PRODUCT_ORDER.color_id  = BODY.id') as $row) 
+                               FROM GUITAR_BODY
+                               JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
+                               JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
             echo '<section class="pricing py-5">
                     <div class="container">
