@@ -31,8 +31,51 @@ $db = get_db();
             <h5 class="card-title text-center">'. ucfirst($row['name']) . '</h5>
             <a href="#" class="btn btn-primary btn-md ">Add to Cart</a>
           </div>';
+            echo '<section class="pricing py-5">
+            <div class="container">
+              <div class="row">
+              <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                        <img src="tele3.png" class="card-img-top" alt="...">
+                  <h6 class="card-price text-center">' . ucfirst($row['price']) . '</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['name']) . '</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
+                  </ul>
+                  <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+</section>';
           }
           ?>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
+
+<section class="pricing py-5">
+            <div class="container">
+              <div class="row">
+                <!-- Free Tier -->
+                <div class="col-lg-4">
+                        <div class="card mb-5 mb-lg-0">
+                          <div class="card-body">
+                                  <img src="tele3.png" class="card-img-top" alt="...">
+                            <h6 class="card-price text-center">$299</h6>
+                            <hr>
+                            <ul class="fa-ul">
+                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red Ash Body</li>
+                              <li><span class="fa-li"><i class="fas fa-check"></i></span>Red PickUp Shield</li>
+                              <li><span class="fa-li"><i class="fas fa-check"></i></span>White PickUps</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </section>
