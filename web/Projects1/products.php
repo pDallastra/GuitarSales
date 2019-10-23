@@ -30,7 +30,7 @@ $db = get_db();
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                        <img style="width: 470px; height: 153.92" src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                        <img style="width: 15rem";height: 10rem;" src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
                   <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
                   <hr>
                   <ul class="fa-ul">
