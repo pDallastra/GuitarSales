@@ -65,8 +65,8 @@ section.pricing {
   }
   
   .d-block {
-    width:180rem;
-    height: 51rem;
+    width:100rem;
+    height: 30rem;
     
   }
   /* Hover Effects on Card */
@@ -79,5 +79,11 @@ section.pricing {
     }
     .pricing .card:hover .btn {
       opacity: 1;
+    }
+
+    .d-block {
+      width:180rem;
+      height: 51rem;
+      
     }
   }
