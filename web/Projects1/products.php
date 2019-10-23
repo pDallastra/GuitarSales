@@ -18,15 +18,16 @@ $db = get_db();
 <body>
     <?php require_once('navbar.php'); ?>
     
+    <section class="pricing py-5">
+                    <div class="container">
+                      <div class="row">
     <?php
           foreach ($db->query('SELECT *
                                FROM GUITAR_BODY
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
-            echo '<section class="pricing py-5">
-                    <div class="container">
-                      <div class="row">
+            echo '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -40,12 +41,13 @@ $db = get_db();
                   <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
                 </div>
               </div>
-            </div>
-    </div>
-  </div>
-</section>';
+            </div>';
           }
           ?>
+
+    </div>
+  </div>
+</section>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
