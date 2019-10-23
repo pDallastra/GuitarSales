@@ -26,6 +26,7 @@ $db = get_db();
                                JOIN GUITAR ON PRODUCT_ORDER.guitar_id = BODY.id
                                JOIN BODY ON PRODUCT_ORDER.color_id = BODY.id') as $row) 
           {
+            echo "line 29";
             echo '
           <div class="d-flex flex-column ml-2">
             <h5 class="card-title text-center">'. ucfirst($row['name']) . '</h5>
