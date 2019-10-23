@@ -17,7 +17,7 @@ $db = get_db();
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    
+    <form id="">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
@@ -27,7 +27,7 @@ $db = get_db();
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
-            echo '<form id="">
+            echo '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -42,13 +42,14 @@ $db = get_db();
                 </div>
               </div>
             </div>
-            </form>';
+            ';
           }
           ?>
 
     </div>
   </div>
 </section>
+</form>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
