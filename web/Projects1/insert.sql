@@ -1,27 +1,13 @@
-INSERT INTO GUITAR ( guitar_name
-                  , guitar_price
-                   ) 
-           VALUES ( 'StratoCaster', 349);
-INSERT INTO GUITAR ( guitar_name
-                  , guitar_price
-                   ) 
-           VALUES ( 'TeleCaster', 329);
-INSERT INTO GUITAR ( guitar_name
-                  , guitar_price
-                   ) 
-           VALUES ( 'Jaguar', 299);
+INSERT INTO GUITAR(name, price) VALUES('StratoCaster', 399);
+INSERT INTO GUITAR(name, price) VALUES('TeleCaster', 349);
+INSERT INTO GUITAR(name, price) VALUES('Jaguar', 299);
 
--- INSERT INTO BODY_COLOR ( body_color) 
---            VALUES ( 'White');
--- INSERT INTO BODY_COLOR ( body_color) 
---            VALUES ( 'Black');
--- INSERT INTO BODY_COLOR ( body_color) 
---            VALUES ( 'Green');           
+INSERT INTO BODY(color) VALUES ('White');
+INSERT INTO BODY(color) VALUES ('Black');
+INSERT INTO BODY(color) VALUES ('Green');
 
-
--- INSERT INTO SHIELD_COLOR ( shield_color) 
---            VALUES ( 'White');
-
--- INSERT INTO PICKUP_COLOR ( pickup_color) 
---            VALUES ( 'White');
-         
+INSERT INTO PRODUCT_ORDER(guitar_id, color_id) VALUES (2,1);
+INSERT INTO PRODUCT_ORDER(guitar_id, color_id) VALUES (3,1);
+INSERT INTO PRODUCT_ORDER(guitar_id, color_id) VALUES (2,2);
+INSERT INTO PRODUCT_ORDER(guitar_id, color_id) VALUES (1,2);
+INSERT INTO PRODUCT_ORDER(guitar_id, color_id) VALUES (2,3);
