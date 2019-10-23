@@ -27,7 +27,7 @@ $db = get_db();
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
-            echo '
+            echo '<form id="">
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -41,7 +41,8 @@ $db = get_db();
                   <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
                 </div>
               </div>
-            </div>';
+            </div>
+            </form>';
           }
           ?>
 
