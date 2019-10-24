@@ -4,10 +4,10 @@ $data = $_POST;
 
 echo $data;
 
-echo "line 7";
+echo "line 7<br/>";
 
 echo $_POST['name'];
 
-echo "line 11";
+echo "line 11<br/>";
 
 ?>
