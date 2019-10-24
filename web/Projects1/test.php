@@ -5,15 +5,9 @@ $db = get_db();
 
 $data = $_POST;
 
-echo $data;
+foreach($data as $values)
 
-echo "line 7<br/>";
-
-$data = $_POST['name'];
-
-echo $data;
-echo $data['name'];
-
-echo "line 11<br/>";
+    echo $values['name<br/>'];
+    echo $values['price<br/ß>'];
 
 ?>
