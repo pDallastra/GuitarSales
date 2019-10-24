@@ -2,6 +2,6 @@
 
 $selectedId = $_GET['id'];
 
-echo selectedId;
+echo $selectedId;
 
 ?>
