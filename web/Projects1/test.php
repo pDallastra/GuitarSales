@@ -8,6 +8,8 @@ echo "line 7<br/>";
 
 echo $_POST['name'];
 
+echo $data['name'];
+
 echo "line 11<br/>";
 
 ?>
