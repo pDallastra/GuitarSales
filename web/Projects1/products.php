@@ -23,7 +23,7 @@ if (!isset($_SESSION['cart']))
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <form id="mainForm" method="POST" action="test.php?guitarId=<?php echo $id ?>">
+    <form id="mainForm" method="POST" action="test.php">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
@@ -45,7 +45,7 @@ if (!isset($_SESSION['cart']))
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                   </ul>
-                  <input type="hidden" value="'. $id .'">
+                  <input type="hidden" value="'. $row['id'] .'">
                   <button type="submit" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
