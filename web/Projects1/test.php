@@ -3,7 +3,7 @@
 require("database.php");
 $db = get_db();
 
-$data = $_POST;
+$data = $_POST[$row];
 
 echo $data;
 
