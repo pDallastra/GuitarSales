@@ -17,7 +17,7 @@ $db = get_db();
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <form id="">
+    <form id="mainForm" method="POST">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
@@ -38,7 +38,7 @@ $db = get_db();
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
                   </ul>
-                  <a href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</a>
+                  <button type="submit" name="'. ucfirst($row) . '" href="#" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
