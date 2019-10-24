@@ -3,6 +3,6 @@
 require("database.php");
 $db = get_db();
 
-echo $_POST;
+echo $_POST[0];
 
 ?>
