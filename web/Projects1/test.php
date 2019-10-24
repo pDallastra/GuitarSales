@@ -1,5 +1,5 @@
 <?php 
 
-echo $row;
+echo $_POST($row);
 
 ?>
