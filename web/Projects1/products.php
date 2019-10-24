@@ -23,7 +23,7 @@ if (!isset($_SESSION['cart']))
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <form id="mainForm" method="POST" action="test.php?guitarId=<?php $id ?>">
+    <form id="mainForm" method="POST" action="test.php?guitarId=<?php echo $id ?>">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
