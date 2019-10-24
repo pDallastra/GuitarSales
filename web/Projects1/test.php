@@ -1,7 +1,6 @@
 <?php
 
-$selectedId = $_GET['id'];
+echo $_GET['id'];
 
-echo $selectedId;
 
 ?>
