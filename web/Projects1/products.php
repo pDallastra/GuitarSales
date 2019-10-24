@@ -46,7 +46,7 @@ if (!isset($_SESSION['cart']))
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
                   </ul>
-                  <button type="submit" name="'. $name . '" action="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
+                  <button type="submit" name="'. $row . '" action="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
