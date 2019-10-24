@@ -1,6 +1,6 @@
 <?php 
 
-$name = $_POST[$row];
-echo $name;
+echo $_POST[$row];
+
 
 ?>
