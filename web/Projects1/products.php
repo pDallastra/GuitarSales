@@ -1,6 +1,9 @@
 <?php
 require "database.php";
 $db = get_db();
+
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
