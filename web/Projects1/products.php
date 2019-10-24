@@ -39,7 +39,7 @@ if (!isset($_SESSION['cart']))
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                        <img style="width: 18rem";height: 12rem;" src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                        <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
                   <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
                   <hr>
                   <ul class="fa-ul">

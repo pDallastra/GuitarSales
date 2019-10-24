@@ -69,6 +69,11 @@ section.pricing {
     height: 33rem;
     
   }
+
+  .card-img-top {
+    width: 25rem;
+    height: 18rem;
+  }
   /* Hover Effects on Card */
   
   @media (min-width: 992px) {
@@ -86,4 +91,10 @@ section.pricing {
       height: 51rem;
       
     }
+
+    .card-img-top {
+      width: 18rem;
+      height: 12rem;
+    }
+
   }
