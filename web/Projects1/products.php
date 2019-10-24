@@ -35,7 +35,7 @@ if (!isset($_SESSION['cart']))
           {
               $id = $row['id'];
 
-            echo '  $id
+            echo $id . '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">

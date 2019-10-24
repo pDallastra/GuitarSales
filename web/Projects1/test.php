@@ -1,6 +1,6 @@
 <?php
 
-echo $_POST['row'];
+echo $_POST;
 
 
 ?>
