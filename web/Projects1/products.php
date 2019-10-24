@@ -3,7 +3,10 @@ require "database.php";
 $db = get_db();
 
 session_start();
-
+if (!isset($_SESSION['cart'])) 
+{
+  $_SESSION['cart'] = [];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +48,7 @@ session_start();
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
                   </ul>
-                  <button type="submit" name="'. $price . '" action="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
+                  <button type="submit" name="'. $name . '" action="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
