@@ -23,7 +23,7 @@ if (!isset($_SESSION['cart']))
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <form id="mainForm" method="GET">
+    <form id="mainForm" method="POST">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
@@ -33,6 +33,7 @@ if (!isset($_SESSION['cart']))
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
+
 
             echo '
                         <div class="col-lg-4">
@@ -45,7 +46,7 @@ if (!isset($_SESSION['cart']))
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
                   </ul>
-                  <button type="submit" name="'. $name . '" action="test.php?id=$id" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
+                  <button type="submit" name="'. $name . '" action="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
