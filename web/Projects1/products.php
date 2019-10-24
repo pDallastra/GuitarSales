@@ -27,18 +27,22 @@ $db = get_db();
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
+            $price = ucfirst($row['price']); 
+            $name = ucfirst($row['name']);
+            $color = ucfirst($row['color']); 
+
             echo '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                        <img name="' . $row['img'] . '" style="width: 18rem";height: 12rem;" src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                        <img style="width: 18rem";height: 12rem;" src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
                   <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
                   <hr>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: ' . ucfirst($row['name']) . '</li>
-                    <li name="' . $row['color'] . '><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: ' . ucfirst($row['color']) . '</li>
                   </ul>
-                  <button type="submit" name="'. $row . '" href="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
+                  <button type="submit" name="'. $name . '" href="test.php" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
