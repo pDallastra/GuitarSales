@@ -3,10 +3,8 @@
 $data = $_POST;
 
 echo $data;
-echo $data['name'];
+echo $_POST['name'];
 
-$test = $_POST['name'];
-echo $test;
 
 
 ?>
