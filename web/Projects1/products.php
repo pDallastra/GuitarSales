@@ -2,11 +2,6 @@
 require "database.php";
 $db = get_db();
 
-session_start();
-if (!isset($_SESSION['cart'])) 
-{
-  $_SESSION['cart'] = [];
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
