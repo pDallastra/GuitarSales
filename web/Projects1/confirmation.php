@@ -51,4 +51,27 @@ die(); // we always include a die after redirects. In this case, there would be 
        // but in general, there could be things after here that we don't want them
        // to see.
 
+          foreach ($db->query('SELECT *
+                               FROM PRODUCT_ORDER
+                               ') as $row) 
+          {
+
+            echo '
+                        <div class="col-lg-4">
+                          <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                  <h6 class="card-price text-center">Order Successfully Done!</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Name: <strong>' . ucfirst($row['name']) . '</strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Email: <strong>' . ucfirst($row['email']) . '</strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Model: <strong>' . ucfirst($row['model']) . '</strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: $ <strong>' . ucfirst($row['price']) . '</strong></li>                     
+                    </ul>
+                </div>
+              </div>
+            </div>
+            ';
+          }
 ?>

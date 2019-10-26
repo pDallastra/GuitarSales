@@ -19,7 +19,7 @@ CREATE TABLE GUITAR_BODY(
 
 );
 
-CREATE TABLE PRODUCT_ORDER{
+CREATE TABLE PRODUCT_ORDER(
     id          SERIAL          NOT NULL PRIMARY KEY,
 
     name        TEXT            NOT NULL,
@@ -27,6 +27,4 @@ CREATE TABLE PRODUCT_ORDER{
     model       VARCHAR(20)     NOT NULL,
     color       VARCHAR(20)     NOT NULL,
     price       INT             NOT NULL
-
-
-}
+);
