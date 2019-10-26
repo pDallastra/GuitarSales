@@ -22,7 +22,7 @@
 <body>
     <?php require_once('navbar.php') ?>
     <br>
-    <div class="container">
+    <div class="container" style="border-radius= 5rem;">
     <table class="table table-dark">
   <thead>
     <tr>
