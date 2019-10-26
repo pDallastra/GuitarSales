@@ -51,7 +51,7 @@ $db = get_db();
 </section>
           <button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
           <section id="displayForm" style="display: none;">
-              <form>
+              <form method="POST">
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Full Name</label>
@@ -63,13 +63,13 @@ $db = get_db();
                     </div>
                   </div>
                   <div class="form-row">
-                  <select id="txtModel" class="form-control col-md-6">
+                  <select id="txtModel" name="txtModel" class="form-control col-md-6">
                         <option selected>Guitar Model</option>
                         <option>Stratocaster</option>
                         <option>Telecaster</option>
                         <option>Jaguar</option>
                   </select>
-                  <select id="txtModel" class="form-control col-md-6">
+                  <select id="txtColor" name="txtColor" class="form-control col-md-6">
                         <option selected>Body Color</option>
                         <option>White</option>
                         <option>Black</option>
@@ -77,8 +77,8 @@ $db = get_db();
                   </select>
                   <div class="form-group">
                   </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
+                  <br/><button type="submit" class="btn btn-primary" action="">Checkout</button>
+              </form>
           </section>
     <?php require_once('footer.php'); ?>
 
