@@ -57,7 +57,7 @@ die(); // we always include a die after redirects. In this case, there would be 
                     <div class="container">
                       <div class="row">
     <?php
-          foreach ($db->query('SELECT * FROM PRODUCT_ORDER BY id DESC LIMIT 1') as $row) 
+          foreach ($db->query('SELECT TOP 1 * FROM PRODUCT_ORDER BY id DESC') as $row) 
           {
 
             echo '
