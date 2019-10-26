@@ -49,7 +49,7 @@ $db = get_db();
     </div>
   </div>
 </section>
-          <button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
+          <button type="submit" class="btn btn-block btn-danger btn-lg" onclick="orderForm()">I want to order a Guitar!</button>
           <section id="displayForm" style="display: none;">
               <form method="POST">
                   <div class="form-row">
@@ -78,7 +78,7 @@ $db = get_db();
                   <div class="form-group">
                   </div>
                   <br><br>
-                  <button type="submit" class="btn btn-dark btn-lg" action="">Checkout</button>
+                  <button type="submit" class="btn btn-block btn-dark btn-lg" action="">Checkout</button>
               </form>
           </section>
     <?php require_once('footer.php'); ?>
