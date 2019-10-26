@@ -102,8 +102,8 @@ $db = get_db();
 
     <script>
         function orderForm() {
-            var display = document.getElementById('displayForm')
-            display.style.display = "flex"
+            var displayForm = document.getElementById('displayForm')
+            displayForm.style.display = "flex"
             
     </script>
 </body>
