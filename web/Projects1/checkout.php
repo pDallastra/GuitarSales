@@ -4,6 +4,19 @@
     $model = $_POST['txtModel'];
     $color = $_POST['txtColor'];
 
+    if($model == 'Stratocaster')
+    {
+        $price = 399;
+    }
+    else if($model == 'Telecaster')
+    {
+        $price = 349;
+    }
+    else if($model == 'Jaguar')
+    {
+        $price = 299;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +43,7 @@
       <th scope="col">Email</th>
       <th scope="col">Guitar Model</th>
       <th scope="col">Body Color</th>
+      <th scope="col">Price</th>
     </tr>
   </thead>
   <tbody>
@@ -38,13 +52,13 @@
       <td><?php echo $email ?></td>
       <td><?php echo $model ?></td>
       <td><?php echo $color ?></td>
+      <td><?php echo $price ?></td>
     </tr>
   </tbody>
 </table>
+<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="product.php">Cancel</a></button>
+<button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="confirmation.php">Confirm</a></button>
 </div>
-<br>
-<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Cancel</button>
-<button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Confirm</button>
 
 <?php require_once('footer.php') ?>
 </body>
