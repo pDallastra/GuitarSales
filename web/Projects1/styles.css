@@ -74,6 +74,10 @@ section.pricing {
     width: 25rem;
     height: 18rem;
   }
+  
+  .displayForm {
+    display: none;
+  }
   /* Hover Effects on Card */
   
   @media (min-width: 992px) {
