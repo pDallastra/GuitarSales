@@ -39,8 +39,6 @@ $db = get_db();
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                   </ul>
-                  <input type="hidden" value="'. $row['id'] .'">
-                  <button type="submit" class="btn btn-block btn-primary text-uppercase">Add to Cart</button>
                 </div>
               </div>
             </div>
