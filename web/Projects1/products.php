@@ -47,8 +47,9 @@ $db = get_db();
           ?>
 
     </div>
+    <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 3rem;height: 2rem;border-radius: 2rem;" onclick="orderForm()">I want to order a Guitar!</button>
   </div>
-</section>
+</section class="container">
           <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 3rem;height: 2rem;border-radius: 2rem;" onclick="orderForm()">I want to order a Guitar!</button>
           <section id="displayForm" style="display: none;">
               <form method="POST">
