@@ -63,13 +63,13 @@ $db = get_db();
                     </div>
                   </div>
                   <div class="form-row">
-                  <select id="txtModel" class="form-control">
+                  <select id="txtModel" class="form-control col-md-6">
                         <option selected>Guitar Model</option>
                         <option>Stratocaster</option>
                         <option>Telecaster</option>
                         <option>Jaguar</option>
                   </select>
-                  <select id="txtModel" class="form-control">
+                  <select id="txtModel" class="form-control col-md-6">
                         <option selected>Body Color</option>
                         <option>White</option>
                         <option>Black</option>
