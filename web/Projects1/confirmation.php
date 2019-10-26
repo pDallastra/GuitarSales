@@ -18,8 +18,7 @@ $db = get_db();
 </head>
 <body>
 <?php require_once('navbar.php'); ?>
-    <section class="pricing py-5">
-                    <div class="container">
+    <section class="pricing py-5 container">
     <?php
           foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
           {
@@ -39,11 +38,9 @@ $db = get_db();
                     </ul>
                 </div>
               </div>
-            </div>';
-          }
+            </div></section>';}
 ?>
-    </div>
-</section>
+
 
 <?php require_once('footer.php'); ?>
 </body>
