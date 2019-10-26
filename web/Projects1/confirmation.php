@@ -5,10 +5,8 @@ $email = $_POST['txtEmail'];
 $model = $_POST['txtModel'];
 $color = $_POST['txtColor'];
 $price = $_POST['txtPrice']
-
 require("database.php");
 $db = get_db();
-
 try
 {
    $query = 'INSERT INTO product_order(name, email, model, color, price) VALUES(:name, :email, :model, :color, :price)';
@@ -38,10 +36,25 @@ die(); // we always include a die after redirects. In this case, there would be 
        // harm if the user got the rest of the page, because there is nothing else
        // but in general, there could be things after here that we don't want them
        // to see.
-
-          foreach ($db->query('SELECT *
-                               FROM PRODUCT_ORDER
-                               ') as $row) 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<?php require_once('navbar.php'); ?>
+    <section class="pricing py-5">
+                    <div class="container">
+                      <div class="row">
+    <?php
+          foreach ($db->query('SELECT TOP 1 *
+          FROM PRODUCT_ORDER
+         ORDER
+            BY id DESC') as $row) 
           {
 
             echo '
@@ -63,3 +76,8 @@ die(); // we always include a die after redirects. In this case, there would be 
             ';
           }
 ?>
+    </div>
+  </div>
+</section>
+</body>
+</html>
