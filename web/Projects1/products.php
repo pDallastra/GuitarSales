@@ -50,7 +50,7 @@ $db = get_db();
   </div>
 </section>
           <button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
-          <section id="displayForm">
+          <section id="displayForm" style="display: none;">
               <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
