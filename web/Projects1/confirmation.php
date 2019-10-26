@@ -18,13 +18,13 @@ $db = get_db();
 </head>
 <body>
 <?php require_once('navbar.php'); ?>
-    <section class="pricing py-5 container">
+    <section class="pricing py-5">
+            <div class="container">
     <?php
           foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
           {
 
             echo '
-                        <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
                   <h6 class="card-price text-center">Order Successfully Done!</h6>
@@ -37,10 +37,11 @@ $db = get_db();
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: $ <strong>' . ucfirst($row['price']) . '</strong></li>                     
                     </ul>
                 </div>
-              </div>
-            </div></section>';}
+              </div>';
+          }
 ?>
-
+    </div>
+</section>
 
 <?php require_once('footer.php'); ?>
 </body>
