@@ -56,6 +56,7 @@ die(); // we always include a die after redirects. In this case, there would be 
                     <div class="container">
                       <div class="row">
     <?php
+        echo "line 59";
           foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
           {
 
@@ -76,6 +77,7 @@ die(); // we always include a die after redirects. In this case, there would be 
               </div>
             </div>';
           }
+          echo "line 80";
 ?>
     </div>
   </div>
