@@ -2,6 +2,7 @@
 require("database.php");
 $db = get_db();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@ $db = get_db();
                       <div class="row">
     <?php
             echo "20";
-          foreach ($db->query('SELECT TOP 1 * FROM PRODUCT_ORDER ORDER BY id DESC') as $row) 
+          foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
           {
 
             echo '
