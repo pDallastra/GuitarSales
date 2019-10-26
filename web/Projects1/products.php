@@ -51,8 +51,8 @@ $db = get_db();
 </section>
           <button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
           <section id="displayForm" style="display: none;">
-              <center><form>
-                  <div class="form-row">
+              <form>
+                  <div class="form-row" style="-ms-flex-align: center;align-items: center;">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Email</label>
                       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
