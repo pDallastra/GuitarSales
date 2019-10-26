@@ -51,7 +51,7 @@ $db = get_db();
     </div>
   </div>
 </section>
-          <<button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
+          <button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
