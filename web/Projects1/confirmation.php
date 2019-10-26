@@ -1,12 +1,13 @@
 <?php
+require("database.php");
+$db = get_db();
 // get the data from the POST
 $name = $_POST['txtName'];
 $email = $_POST['txtEmail'];
 $model = $_POST['txtModel'];
 $color = $_POST['txtColor'];
 $price = $_POST['txtPrice']
-require("database.php");
-$db = get_db();
+
 try
 {
    $query = 'INSERT INTO product_order(name, email, model, color, price) VALUES(:name, :email, :model, :color, :price)';
