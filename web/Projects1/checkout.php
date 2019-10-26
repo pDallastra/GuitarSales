@@ -21,12 +21,14 @@
 </head>
 <body>
     <?php require_once('navbar.php') ?>
+    <br>
+    <div class="container">
     <table class="table table-dark">
   <thead>
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
-      <th scope="col">Guitar Model`</th>
+      <th scope="col">Guitar Model</th>
       <th scope="col">Body Color</th>
     </tr>
   </thead>
@@ -39,6 +41,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 <?php require_once('footer.php') ?>
 </body>
 </html>
