@@ -18,7 +18,6 @@ $db = get_db();
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <form id="mainForm" method="POST" action="test.php">
     <section class="pricing py-5">
                     <div class="container">
                       <div class="row">
@@ -52,9 +51,7 @@ $db = get_db();
     </div>
   </div>
 </section>
-
           <<button type="submit" class="btn btn-block btn-primary" onclick="orderForm()">I want to order a Guitar!</button>
-</form>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
