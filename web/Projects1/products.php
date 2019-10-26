@@ -58,7 +58,7 @@ $db = get_db();
     <script>
         function orderForm() {
             var display = document.getElementById('displayForm')
-            display.innerHTML = "Test!"
+            display.innerHTML = "<strong>Test!</strong>"
         }
     </script>
 </body>
