@@ -17,8 +17,8 @@
                     <div class="container">
                       <div class="row">
     <?php
-        echo "line 59";
-          foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
+            echo "20";
+          foreach ($db->query('SELECT TOP 1 * FROM PRODUCT_ORDER ORDER BY id DESC') as $row) 
           {
 
             echo '
