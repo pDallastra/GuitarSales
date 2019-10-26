@@ -75,9 +75,6 @@ section.pricing {
     height: 18rem;
   }
 
-  .form-row {
-    text-align: center;
-  }
   /* Hover Effects on Card */
   
   @media (min-width: 992px) {
@@ -93,7 +90,6 @@ section.pricing {
     .d-block {
       width:180rem;
       height: 51rem;
-      
     }
 
     .card-img-top {

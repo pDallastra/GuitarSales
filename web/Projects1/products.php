@@ -103,6 +103,8 @@ $db = get_db();
     <script>
         function orderForm() {
             document.getElementById("displayForm").style.display = "flex"
+            document.getElementById("displayForm").style.justify-content = "center"
+            
         }
             
     </script>
