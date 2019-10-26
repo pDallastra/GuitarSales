@@ -57,7 +57,7 @@
   </tbody>
 </table>
 <p><button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
-<form  method="POST" action="confirmation.php">
+<form  method="POST" action="insert.php">
 <input type="hidden" id="txtColor" name="txtName" value="<?php echo $name ?>"/>
 <input type="hidden" id="txtColor" name="txtEmail" value="<?php echo $email ?>"/>
 <input type="hidden" id="txtColor" name="txtModel" value="<?php echo $model ?>"/>
