@@ -20,9 +20,7 @@ $db = get_db();
 <?php require_once('navbar.php'); ?>
     <section class="pricing py-5">
                     <div class="container">
-                      <div class="row">
     <?php
-            echo "20";
           foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
           {
 
@@ -43,10 +41,10 @@ $db = get_db();
               </div>
             </div>';
           }
-          echo "line 80";
 ?>
     </div>
-  </div>
 </section>
+
+<?php require_once('footer.php'); ?>
 </body>
 </html>
