@@ -1,22 +1,22 @@
 <?php
 // get the data from the POST
-$name = $_POST['txtName'];
-$email = $_POST['txtEmail'];
-$model = $_POST['txtModel'];
-$color = $_POST['txtColor'];
+// $name = $_POST['txtName'];
+// $email = $_POST['txtEmail'];
+// $model = $_POST['txtModel'];
+// $color = $_POST['txtColor'];
 
-if($model == 'Stratocaster')
-{
-    $price = 399;
-}
-else if($model == 'Telecaster')
-{
-    $price = 349;
-}
-else if($model == 'Jaguar')
-{
-    $price = 299;
-}
+// if($model == 'Stratocaster')
+// {
+//     $price = 399;
+// }
+// else if($model == 'Telecaster')
+// {
+//     $price = 349;
+// }
+// else if($model == 'Jaguar')
+// {
+//     $price = 299;
+// }
 
 require("database.php");
 $db = get_db();
