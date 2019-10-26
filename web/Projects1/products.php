@@ -47,11 +47,10 @@ $db = get_db();
           ?>
 
     </div>
-    <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 3rem;height: 2rem;border-radius: 2rem;" onclick="orderForm()">I want to order a Guitar!</button>
+    <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;" onclick="orderForm()">I want to order a Guitar!</button>
   </div>
-</section class="container">
-          <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 3rem;height: 2rem;border-radius: 2rem;" onclick="orderForm()">I want to order a Guitar!</button>
-          <section id="displayForm" style="display: none;">
+</section>
+          <section id="displayForm" class="container" style="display: none;">
               <form method="POST">
                   <div class="form-row">
                     <div class="form-group col-md-6">
@@ -79,7 +78,7 @@ $db = get_db();
                   <div class="form-group">
                   </div>
                   <br><br>
-                  <button type="submit" class="btn btn-block btn-dark btn-lg" style="width: 3rem;height: 2rem;border-radius: 2rem;" action="">Checkout</button>
+                  <button type="submit" class="btn btn-block btn-dark btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;" action="">Checkout</button>
               </form>
           </section>
     <?php require_once('footer.php'); ?>
