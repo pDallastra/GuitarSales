@@ -77,7 +77,8 @@ $db = get_db();
                   </select>
                   <div class="form-group">
                   </div>
-                  <br/><button type="submit" class="btn btn-primary" action="">Checkout</button>
+                  <br><br>
+                  <button type="submit" class="btn btn-block" action="">Checkout</button>
               </form>
           </section>
     <?php require_once('footer.php'); ?>
