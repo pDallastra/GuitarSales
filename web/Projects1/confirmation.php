@@ -26,7 +26,7 @@ try
    $query = 'INSERT INTO product_order(name, email, model, color, price) VALUES(:name, :email, :model, :color, :price)';
    $statement = $db->prepare($query);
    $statement->bindValue(':name', $name);
-   $statement->bindValue(':title', $title);
+   $statement->bindValue(':email', $email);
    $statement->bindValue(':model', $model);
    $statement->bindValue(':color', $color);
    $statement->bindValue(':price', $price);
