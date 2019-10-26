@@ -78,7 +78,7 @@ $db = get_db();
                   <div class="form-group">
                   </div>
                   <br><br>
-                  <<button type="submit" class="btn btn-dark btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Checkout</button>
+                  <button type="submit" class="btn btn-dark btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Checkout</button>
                   </section>
               </form>
           

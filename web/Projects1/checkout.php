@@ -23,7 +23,7 @@
     <?php require_once('navbar.php') ?>
     <br>
     <div class="container">
-    <table class="table table-dark" style="border-radius= 5rem;">
+    <table class="table table-dark">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -42,6 +42,10 @@
   </tbody>
 </table>
 </div>
+<br>
+<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Cancel</button>
+<button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Confirm</button>
+
 <?php require_once('footer.php') ?>
 </body>
 </html>
