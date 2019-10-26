@@ -56,7 +56,7 @@
     </tr>
   </tbody>
 </table>
-<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="product.php" style="color: white;">Cancel</a></button>
+<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
 <button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="confirmation.php" style="color: white;">Confirm</a></button>
 </div>
 
