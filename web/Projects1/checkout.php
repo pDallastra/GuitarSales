@@ -52,12 +52,12 @@
       <td><?php echo $email ?></td>
       <td><?php echo $model ?></td>
       <td><?php echo $color ?></td>
-      <td><?php echo $price ?></td>
+      <td><?php echo '$' . $price ?></td>
     </tr>
   </tbody>
 </table>
-<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="product.php">Cancel</a></button>
-<button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="confirmation.php">Confirm</a></button>
+<button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="product.php" style="color: white;">Cancel</a></button>
+<button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="confirmation.php" style="color: white;">Confirm</a></button>
 </div>
 
 <?php require_once('footer.php') ?>
