@@ -22,8 +22,8 @@
 <body>
     <?php require_once('navbar.php') ?>
     <br>
-    <div class="container" style="border-radius= 5rem;">
-    <table class="table table-dark">
+    <div class="container">
+    <table class="table table-dark" style="border-radius= 5rem;">
   <thead>
     <tr>
       <th scope="col">Name</th>
