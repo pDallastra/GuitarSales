@@ -11,7 +11,7 @@ body {
 }
 
 section.pricing {
-    background: linear-gradient(to right, #233567, #494ca2);
+    background: linear-gradient(to right, #233567, #233567);
   }
   
   .pricing .card {
