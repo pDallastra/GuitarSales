@@ -18,7 +18,7 @@ $db = get_db();
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <section class="pricing py-5" style="font-size: 14pt; font-family: Tahoma;">
+    <section class="pricing py-5" style="font-size: 14pt; font-family: Tahoma;background-color: #315b96;">
                     <div class="container">
                       <div class="row">
     <?php
