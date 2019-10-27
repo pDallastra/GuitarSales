@@ -11,7 +11,7 @@ body {
 }
 
 section.pricing {
-    background: linear-gradient(to right, #233567, #233567);
+    background: linear-gradient(to right, #58508d, #494ca2);
   }
   
   .pricing .card {
@@ -71,10 +71,9 @@ section.pricing {
   }
 
   .card-img-top {
-    width: 18rem;
-    height: 12rem;
+    width: 25rem;
+    height: 18rem;
   }
-
 
   /* Hover Effects on Card */
   
@@ -92,8 +91,10 @@ section.pricing {
       width:180rem;
       height: 51rem;
     }
+
     .card-img-top {
-      width: 25rem;
-      height: 18rem;
+      width: 18rem;
+      height: 12rem;
     }
+
   }
