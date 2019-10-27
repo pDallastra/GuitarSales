@@ -10,9 +10,6 @@ body {
     background-color: steelblue;
 }
 
-section.pricing {
-    background: linear-gradient(to right, #58508d, #494ca2);
-  }
   
   .pricing .card {
     border: none;
