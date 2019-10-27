@@ -18,7 +18,7 @@ $db = get_db();
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <section class="pricing py-5">
+    <section class="pricing py-5" style="font-size: 14pt; font-family: Tahoma;">
                     <div class="container">
                       <div class="row">
     <?php
@@ -35,7 +35,7 @@ $db = get_db();
                         <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
                   <h6 class="card-price text-center">$' . ucfirst($row['price']) . '</h6>
                   <hr>
-                  <ul class="fa-ul">
+                  <ul class="fa-ul" style="list-style-type:none">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                   </ul>
