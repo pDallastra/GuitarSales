@@ -68,10 +68,6 @@ a {
     height: 18rem;
   }
 
-  .bd-example {
-    width: 50rem;
-    height: 50rem;
-  }
 
   /* Hover Effects on Card */
   
@@ -93,10 +89,5 @@ a {
     .card-img-top {
       width: 18rem;
       height: 12rem;
-    }
-  
-    .bd-example {
-      width: 120rem;
-      height: 120rem;
     }
   }
