@@ -69,8 +69,8 @@ a {
   }
 
   .bd-example {
-    width: 120rem;
-    height: 120rem;
+    width: 50rem;
+    height: 50rem;
   }
 
   /* Hover Effects on Card */
@@ -94,5 +94,9 @@ a {
       width: 18rem;
       height: 12rem;
     }
-
+  
+    .bd-example {
+      width: 120rem;
+      height: 120rem;
+    }
   }
