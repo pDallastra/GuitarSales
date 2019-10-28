@@ -68,6 +68,11 @@ a {
     height: 18rem;
   }
 
+  .bd-example {
+    width: 120rem;
+    height: 120rem;
+  }
+
   /* Hover Effects on Card */
   
   @media (min-width: 992px) {
