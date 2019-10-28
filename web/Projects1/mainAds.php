@@ -1,4 +1,4 @@
-<div class="bd-example" style="width: 120rem;height: 120rem;">
+<div class="bd-example" style="width: 120rem;height: 70rem;display: flex;align-items: center;justify-content: center;">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
