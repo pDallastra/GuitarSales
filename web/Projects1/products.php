@@ -44,12 +44,10 @@ $db = get_db();
                   <input type="hidden" id="txtColor" name="txtColor" value="' $color '"/>
                   </ul>
                 </div>
-                
                 <button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 20%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()"><a href="#displayForm" style="color: white;">Order This Guitar!</a></button>
                 </form>
               </div>
-            </div>
-            </form>';
+            </div>';
           }
           ?>
 
