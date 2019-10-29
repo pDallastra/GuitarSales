@@ -62,21 +62,6 @@ $db = get_db();
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
                   </div>
-                  <div class="form-row">
-                  <select id="txtModel" name="txtModel" class="form-control col-md-6">
-                        <option selected>Guitar Model</option>
-                        <option>Stratocaster</option>
-                        <option>Telecaster</option>
-                        <option>Jaguar</option>
-                  </select>
-                  <select id="txtColor" name="txtColor" class="form-control col-md-6">
-                        <option selected>Body Color</option>
-                        <option>White</option>
-                        <option>Black</option>
-                        <option>Green</option>
-                  </select>
-                  <div class="form-group">
-                  </div>
                   <br><br>
                   <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
                 </section>
