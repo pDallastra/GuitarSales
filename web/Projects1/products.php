@@ -39,9 +39,9 @@ $db = get_db();
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="textModel" value="' . echo $model . '"/>
+                  <input type="hidden" id="txtColor" name="textModel" value="' . $model . '"/>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="txtColor" value="' . echo $colorS . '"/>
+                  <input type="hidden" id="txtColor" name="txtColor" value="' . $colorS . '"/>
                   </ul>
                 </div>
                 
