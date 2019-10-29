@@ -65,7 +65,7 @@ $db = get_db();
                     </div>
                     <div class="form-group col-md-6" style="">
                       <label for="inputPassword4">Email</label>
-                      <input type="hidden" id="txtColor" name="txtColor" value="<?php $colorS ?>"/>
+                      <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $colorS ?>"/>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
                   </div>
