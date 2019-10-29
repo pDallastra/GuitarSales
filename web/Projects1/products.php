@@ -39,9 +39,7 @@ $db = get_db();
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                  <input type="hidden" id="txtModel" name="textModel" value="' $model '"/>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="txtColor" value="' $color '"/>
                   </ul>
                 </div>
                 <button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 20%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()"><a href="#displayForm" style="color: white;">Order This Guitar!</a></button>
