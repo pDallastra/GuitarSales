@@ -2,6 +2,8 @@
 require "database.php";
 $db = get_db();
 
+$model;
+$color;
 ?>
 <!DOCTYPE html>
 <html lang="en">
