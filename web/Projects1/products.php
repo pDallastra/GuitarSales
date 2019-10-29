@@ -57,7 +57,7 @@ $db = get_db();
                       <label for="inputEmail4">Full Name</label>
                       <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6" style="">
                       <label for="inputPassword4">Email</label>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
@@ -78,7 +78,7 @@ $db = get_db();
                   <div class="form-group">
                   </div>
                   <br><br>
-                  <button type="submit" class="btn btn-dark btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;padding: 1rem;">Checkout</button>
+                  <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;">Checkout</button>
                 </section>
               </form>
           
