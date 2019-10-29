@@ -28,6 +28,7 @@ $db = get_db();
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
 
+
             echo '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
@@ -38,6 +39,7 @@ $db = get_db();
                   <ul class="fa-ul" style="list-style-type:none">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                    <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-top: 1rem;margin-bottom: -1rem;" onclick="orderForm()">Order a Guitar!</button>
                   </ul>
                 </div>
               </div>
@@ -45,10 +47,9 @@ $db = get_db();
             ';
           }
           ?>
-
+    
     </div>
   </div>
- <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-top: 1rem;margin-bottom: -1rem;" onclick="orderForm()">Order a Guitar!</button>
 </section>
           <section id="displayForm" class="container" style="display: none;">
               <form method="POST" action="checkout.php">
