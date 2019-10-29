@@ -2,8 +2,6 @@
 require "database.php";
 $db = get_db();
 
-$model;
-$color;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +27,8 @@ $color;
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
-            $GLOBALS['model'] = ucfirst($row['name']);
-            $GLOBALS['color'] = ucfirst($row['color']);
+            $model = ucfirst($row['name']);
+            $color = ucfirst($row['color']);
 
             echo '<form method="POST" action="checkout.php">
                         <div class="col-lg-4">
@@ -41,7 +39,9 @@ $color;
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
+                  <input type="hidden" id="txtModel" name="textModel" value="' . $model . '"/>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                  <input type="hidden" id="txtColor" name="txtColor" value="' $color . '"/>
                   </ul>
                 </div>
                 
@@ -62,12 +62,10 @@ $color;
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Full Name</label>
-                      <input type="hidden" id="txtColor" name="textModel" value="<?php echo $model ?>"/>
                       <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
                     </div>
                     <div class="form-group col-md-6" style="">
                       <label for="inputPassword4">Email</label>
-                      <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $colorS ?>"/>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
                   </div>
