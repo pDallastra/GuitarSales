@@ -39,9 +39,7 @@ $db = get_db();
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="textModel" value="' . $model . '"/>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="txtColor" value="' . $colorS . '"/>
                   </ul>
                 </div>
                 
@@ -62,10 +60,12 @@ $db = get_db();
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Full Name</label>
+                      <input type="hidden" id="txtColor" name="textModel" value="<?php echo $model ?>"/>
                       <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
                     </div>
                     <div class="form-group col-md-6" style="">
                       <label for="inputPassword4">Email</label>
+                      <input type="hidden" id="txtColor" name="txtColor" value="<?php $colorS ?>"/>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
                   </div>
