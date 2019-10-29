@@ -28,7 +28,6 @@ $db = get_db();
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
 
-
             echo '
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
@@ -38,22 +37,18 @@ $db = get_db();
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                    <input type="hidden" id="txtColor" name="textModel" value="' ucfirst($row['name']) . '"/>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                    <input type="hidden" id="txtColor" name="txtColor" value="' ucfirst($row['color']) . '"/>
                   </ul>
-                  <form method="POST" action="checkout.php">
-                    <button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 15%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()">Order This Guitar!</button>
-                  </form>  
                 </div>
               </div>
             </div>
             ';
           }
           ?>
-    
+
     </div>
   </div>
+ <button type="submit" class="btn btn-block btn-danger btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-top: 1rem;margin-bottom: -1rem;" onclick="orderForm()">Order a Guitar!</button>
 </section>
           <section id="displayForm" class="container" style="display: none;">
               <form method="POST" action="checkout.php">
@@ -67,6 +62,22 @@ $db = get_db();
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div>
                   </div>
+                  <div class="form-row">
+                  <select id="txtModel" name="txtModel" class="form-control col-md-6">
+                        <option selected>Guitar Model</option>
+                        <option>Stratocaster</option>
+                        <option>Telecaster</option>
+                        <option>Jaguar</option>
+                  </select>
+                  <select id="txtColor" name="txtColor" class="form-control col-md-6">
+                        <option selected>Body Color</option>
+                        <option>White</option>
+                        <option>Black</option>
+                        <option>Green</option>
+                  </select>
+                  <div class="form-group">
+                  </div>
+                  <br><br>
                   <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
                 </section>
               </form>
