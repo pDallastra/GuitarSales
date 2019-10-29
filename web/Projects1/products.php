@@ -27,8 +27,8 @@ $db = get_db();
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
-            $model = ucfirst($row['name']);
-            $color = ucfirst($row['color']);
+            $GLOBALS['model'] = ucfirst($row['name']);
+            $GLOBALS['color'] = ucfirst($row['color']);
 
             echo '<form method="POST" action="checkout.php">
                         <div class="col-lg-4">
