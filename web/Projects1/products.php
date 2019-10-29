@@ -27,6 +27,8 @@ $db = get_db();
                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
           {
+            $model = ucfirst($row['name']);
+            $color = ucfirst($row['color']);
 
             echo '<form method="POST" action="checkout.php">
                         <div class="col-lg-4">
@@ -37,9 +39,9 @@ $db = get_db();
                   <hr>
                   <ul class="fa-ul" style="list-style-type:none">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="textModel" value="' echo ucfirst($row['name']) . '"/>
+                  <input type="hidden" id="txtColor" name="textModel" value="' echo $model . '"/>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                  <input type="hidden" id="txtColor" name="txtColor" value="' echo ucfirst($row['color']) . '"/>
+                  <input type="hidden" id="txtColor" name="txtColor" value="' echo $colorS . '"/>
                   </ul>
                 </div>
                 
