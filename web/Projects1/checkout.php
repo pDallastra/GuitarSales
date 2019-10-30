@@ -33,24 +33,7 @@
 </head>
 <body>
     <?php require_once('navbar.php') ?>
-    <section id="displayForm" class="container" style="display: none;">
-              <form method="POST" action="checkout.php">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Full Name</label>
-                      <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
-                    </div>
-                    <div class="form-group col-md-6" style="">
-                      <label for="inputPassword4">Email</label>
-                      <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <br><br>
-                  <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
-                </section>
-                <input type="hidden" id="txtModel" name="txtModel" value="<?php echo $model ?>"/>
-                <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
-              </form>
+
     <br>
     <div class="container">
     <table class="table table-dark">
@@ -73,6 +56,24 @@
     </tr>
   </tbody>
 </table>
+<section id="displayForm" class="container">
+              <form method="POST" action="checkout.php">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Full Name</label>
+                      <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
+                    </div>
+                    <div class="form-group col-md-6" style="">
+                      <label for="inputPassword4">Email</label>
+                      <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <br><br>
+                  <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
+                </section>
+                <input type="hidden" id="txtModel" name="txtModel" value="<?php echo $model ?>"/>
+                <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
+              </form>
 <p><button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
 <form  method="POST" action="insert.php">
 <input type="hidden" id="txtColor" name="txtName" value="<?php echo $name ?>"/>
