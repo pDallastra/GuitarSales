@@ -30,7 +30,7 @@ $db = get_db();
             $model = ucfirst($row['name']);
             $color = ucfirst($row['color']);
 
-            echo '<form method="POST" action="checkout.php">
+            echo '<form method="POST" action="products.php">
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -42,7 +42,9 @@ $db = get_db();
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                   </ul>
                 </div>
-                <button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 20%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()"><a href="#displayForm" style="color: white;">Order This Guitar!</a></button>
+                <a href="#displayForm" style="color: white;"><button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 20%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()">Order This Guitar!</a></button>
+                <input type="hidden" id="txtColor" name="textModel" value="'. ucfirst($row['name']) . '"/>
+                <input type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
                 </form>
               </div>
             </div>';
@@ -53,6 +55,10 @@ $db = get_db();
   </div>
  
 </section>
+<?php 
+  $model = $_POST['txtModel'];
+  $color = $_POST['txtColor']
+?>
           <section id="displayForm" class="container" style="display: none;">
               <form method="POST" action="checkout.php">
                   <div class="form-row">
