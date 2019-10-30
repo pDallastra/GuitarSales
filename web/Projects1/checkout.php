@@ -34,34 +34,48 @@
 <body>
     <?php require_once('navbar.php') ?>
     <section class="pricing py-5">
-            <div class="container">
-                          <div class="card mb-5 mb-lg-0">
-                            <div class="card-body">
-                  <h6 class="card-price text-center">Your Choice:</h6>
-                  <hr>
-                  <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong><?php echo $color ?></strong></li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$<?php echo $price ?></strong></li>                 
-                    </ul>
-                </div>
-              </div>
-    </div>
-</section>
+      <div class="container">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h6 class="card-price text-center">Your Choice:</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong><?php echo $color ?></strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$<?php echo $price ?></strong></li>                 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 <form  method="POST" action="insert.php">
-<section id="displayForm" class="container">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
+<section class="pricing py-5">
+      <div class="container">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h6 class="card-price text-center">Your Choice:</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><div class="form-group col-md-6">
                       <label for="inputEmail4">Full Name</label>
                       <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
-                    </div>
-                    <div class="form-group col-md-6" style="">
+                    </div></li>
+              <li><div class="form-group col-md-6" style="">
                       <label for="inputPassword4">Email</label>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
-                    </div>
+                    </div></li>                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- <section id="displayForm" class="container">
+                  <div class="form-row">
+                    
+                    
                   </div>
                   <br><br>
-                </section>
+                </section> -->
 <input type="hidden" id="txtColor" name="txtModel" value="<?php echo $model ?>"/>
 <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
 <input type="hidden" id="txtColor" name="txtPrice" value="<?php echo $price ?>"/>
