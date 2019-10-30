@@ -17,7 +17,7 @@ $db = get_db();
 </head>
 <body>
   <?php require_once('navbar.php'); ?>
-    <div style="width: 100%;height:50rem;">
+    <div style="width: 100%;height:51rem;">
       <section class="pricing py-5">
         <div class="container">
           <?php
