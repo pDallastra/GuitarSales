@@ -1,4 +1,4 @@
-<div class="bd-example" style="color: black;">
+<div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -8,21 +8,21 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/guitar.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
           <h5>Promo #1</h5>
           <p>Buy Any Product And Get 20% OFF On The Second Product!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/guitar2.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="img/guitar2.png" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
         <h5>Promo #2</h5>
           <p>Buy A Guitar Over $300 And Get 40% OFF On The Second One</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/bass.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
         <h5>Promo #3</h5>
           <p>Buy Any Instrument And Get 50% Off On a Different One</p>
         </div>
