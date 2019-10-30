@@ -82,6 +82,7 @@ $db = get_db();
     <script>
         function orderForm() {
             document.getElementById("displayForm").style.display = "block";
+            window.scrollTo(0,1000);
         }      
     </script>
 </body>
