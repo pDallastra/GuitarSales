@@ -90,4 +90,16 @@ a {
       width: 18rem;
       height: 12rem;
     }
+
+    .btn-primary {
+      width: 15rem;
+      height: 4rem;
+      border-radius: 5rem;
+      width: 70%;
+      height: 20%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+    }
   }
