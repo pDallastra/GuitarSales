@@ -69,8 +69,6 @@
                   </div>
                   <br><br>
                 </section>
-<input type="hidden" id="txtColor" name="txtName" value="<?php echo $name ?>"/>
-<input type="hidden" id="txtColor" name="txtEmail" value="<?php echo $email ?>"/>
 <input type="hidden" id="txtColor" name="txtModel" value="<?php echo $model ?>"/>
 <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
 <input type="hidden" id="txtColor" name="txtPrice" value="<?php echo $price ?>"/>
