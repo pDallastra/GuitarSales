@@ -41,9 +41,9 @@ $db = get_db();
                             <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                             <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
-                            </form>
                           </ul>
-                          <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>  
+                          <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>
+                          </form>  
                         </div>
                       </div>
                     </div>';         
