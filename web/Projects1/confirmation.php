@@ -18,8 +18,8 @@ $db = get_db();
 <body>
   <?php require_once('navbar.php'); ?>
     <div style="width: 100%;height:51rem;">
-      <section class="pricing py-5">
-        <div class="container" style="height: auto;">
+      <section class="pricing py-5" style="height: auto;">
+        <div class="container">
           <?php
             foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
             {
