@@ -13,7 +13,9 @@
 </head>
 <body style="background-color: #e5e5e5">
     <?php require_once('navbar.php'); ?>
+    <section style="width: 70%;margin-left: 15%;">
     <?php require_once('mainAds.php'); ?>
+    </section>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
