@@ -36,7 +36,8 @@ $db = get_db();
                         </ul>
                       </div>
                     </div>';
-            }?>
+            }
+          ?>
       </div>
     </section>
   </div>
