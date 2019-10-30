@@ -74,6 +74,8 @@ $db = get_db();
                   <br><br>
                   <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
                 </section>
+                <input type="hidden" id="txtModel" name="txtModel" value="<?php echo $model ?>"/>
+                <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
               </form>
           
     <?php require_once('footer.php'); ?>
