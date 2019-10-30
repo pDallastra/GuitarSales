@@ -43,7 +43,7 @@ $db = get_db();
                   </ul>
                 </div>
                 <a href="#displayForm" style="color: white;"><button type="submit" class="btn btn-block btn-primary btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 80%;height: 20%;margin-left: 10%;margin-right: 10%;margin-top: 1rem;margin-bottom: 1rem;" onclick="orderForm()">Order This Guitar!</a></button>
-                <input type="hidden" id="txtModel" name="textModel" value="'. ucfirst($row['name']) . '"/>
+                <input type="hidden" id="txtName" name="txtName" value="'. ucfirst($row['name']) . '"/>
                 <input type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
                 </form>
               </div>
