@@ -53,15 +53,15 @@
       <div class="container">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
-            <h6 class="card-price text-center">Your Choice:</h6>
+            <h6 class="card-price text-center">Your Information:</h6>
             <hr>
             <ul class="fa-ul">
               <li><div class="form-group col-md-6">
-                      <label for="inputEmail4">Full Name</label>
+                      <label for="fullName">Full Name</label>
                       <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
                     </div></li>
               <li><div class="form-group col-md-6" style="">
-                      <label for="inputPassword4">Email</label>
+                      <label for="email">Email</label>
                       <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
                     </div></li>                
             </ul>
