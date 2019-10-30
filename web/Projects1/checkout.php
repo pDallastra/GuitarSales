@@ -33,6 +33,7 @@
 </head>
 <body>
     <?php require_once('navbar.php') ?>
+    <section class="pricing py-5">
       <div class="container">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
@@ -46,7 +47,9 @@
           </div>
         </div>
       </div>
+    </section>
 <form  method="POST" action="insert.php">
+<section class="pricing py-5">
       <div class="container">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
@@ -65,6 +68,7 @@
           </div>
         </div>
       </div>
+    </section>
 <!-- <section id="displayForm" class="container">
                   <div class="form-row">
                     
