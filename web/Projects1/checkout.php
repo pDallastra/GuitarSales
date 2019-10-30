@@ -42,7 +42,7 @@
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong><?php echo $color ?></strong></li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong><?php echo $price ?></strong></li>                 
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$<?php echo $price ?></strong></li>                 
                     </ul>
                 </div>
               </div>
