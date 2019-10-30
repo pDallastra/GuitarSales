@@ -30,7 +30,7 @@ $db = get_db();
             $model = ucfirst($row['name']);
             $color = ucfirst($row['color']);
 
-            echo '<form method="POST">
+            echo '<form method="POST" onclick="orderForm()">
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -41,7 +41,7 @@ $db = get_db();
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                   <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                   </ul>
-                  <button type="submit" class="btn btn-block btn-primary btn-lg"  onclick="orderForm()">Order This Guitar!</button>
+                  <button type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>
                 <input type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
                 <input type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
                 </form>
