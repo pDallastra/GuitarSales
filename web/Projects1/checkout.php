@@ -37,7 +37,7 @@
             <div class="container">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
-                  <h6 class="card-price text-center">Your Choice!</h6>
+                  <h6 class="card-price text-center">Your Choice:</h6>
                   <hr>
                   <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
@@ -48,6 +48,7 @@
               </div>
     </div>
 </section>
+<h6 class="card-price text-center">If Everything Looks Correct, Please Fill Out Your Information Below:</h6>
 <button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
 <form  method="POST" action="insert.php">
 <section id="displayForm" class="container">
