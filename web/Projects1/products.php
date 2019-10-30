@@ -30,7 +30,7 @@ $db = get_db();
             $model = ucfirst($row['name']);
             $color = ucfirst($row['color']);
 
-            echo '<form method="POST">
+            echo '<form method="POST" action="checkout.php">
                         <div class="col-lg-4">
                           <div class="card mb-5 mb-lg-0">
                             <div class="card-body">
@@ -78,13 +78,6 @@ $db = get_db();
               </form>
           
     <?php require_once('footer.php'); ?>
-
-    <script>
-        function orderForm() {
-            document.getElementById("displayForm").style.display = "block";
-            window.scrollTo(0,1000);
-        }      
-    </script>
 </body>
 </html>
 
