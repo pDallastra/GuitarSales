@@ -65,8 +65,10 @@
 <input type="hidden" id="txtColor" name="txtModel" value="<?php echo $model ?>"/>
 <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
 <input type="hidden" id="txtColor" name="txtPrice" value="<?php echo $price ?>"/>
+<div class="text-center">
 <button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
 <button type="submit" class="btn btn-success btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;">Confirm</button></p>
+</div>
 </form>
 </div>
 
