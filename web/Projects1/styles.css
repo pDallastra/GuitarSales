@@ -1,3 +1,6 @@
+body {
+  background-color: #f6f7d7;
+}
 .sideBar {
     float: left;
     height: 600rem;
@@ -99,5 +102,9 @@ a {
       margin-right: 10%;
       margin-top: -1rem;
       margin-bottom: 1rem;
+    }
+
+    body {
+      background-color: #f6f7d7;
     }
   }
