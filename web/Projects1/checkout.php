@@ -39,8 +39,6 @@
     <table class="table table-dark">
   <thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
       <th scope="col">Guitar Model</th>
       <th scope="col">Body Color</th>
       <th scope="col">Price</th>
@@ -48,8 +46,6 @@
   </thead>
   <tbody>
     <tr>
-      <th><?php echo $name ?></th>
-      <td><?php echo $email ?></td>
       <td><?php echo $model ?></td>
       <td><?php echo $color ?></td>
       <td><?php echo '$' . $price ?></td>
