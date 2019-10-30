@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body style="background-color: #15b7b9">
+<body style="background-color: #e5e5e5">
   <?php require_once('navbar.php') ?>
   <section class="pricing py-5" style="margin-top: -2rem;">
     <div class="container">
