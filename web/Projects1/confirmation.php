@@ -15,9 +15,9 @@ $db = get_db();
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #f6f7d7">
   <?php require_once('navbar.php'); ?>
-    <div style="width: 100%;height:41rem;background-color: #f6f7d7">
+    <div style="width: 100%;height:41rem;">
       <section class="pricing py-5" style="margin-top:10rem;font-size: 18pt;">
         <div class="container">
           <?php
