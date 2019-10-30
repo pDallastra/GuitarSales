@@ -19,64 +19,38 @@ $db = get_db();
 <body>
     <?php require_once('navbar.php'); ?>
     <section class="pricing py-5" style="font-size: 16pt; font-family: Tahoma;">
-                    <div class="container">
-                      <div class="row">
-    <?php
-          foreach ($db->query('SELECT *
-                               FROM GUITAR_BODY
-                               JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
-                               JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
-          {
-            $model = ucfirst($row['name']);
-            $color = ucfirst($row['color']);
-
-            echo '<form method="POST" action="checkout.php">
-                        <div class="col-lg-4">
-                          <div class="card mb-5 mb-lg-0">
-                            <div class="card-body">
-                        <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
-                  <h6 class="card-price text-center">$' . ($row['price']) . '</h6>
-                  <hr>
-                  <ul class="fa-ul" style="list-style-type:none">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                  </ul>
-                  <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>
-                <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
-                <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
-                </form>
-                </div>
-              </div>
-            </div>';
-          }
-          ?>
-
-    </div>
-  </div>
-</section>
-<?php 
-  $model = $_POST['txtModel'];
-  $color = $_POST['txtColor']
-?>
-          <section id="displayForm" class="container" style="display: none;">
-              <form method="POST" action="checkout.php">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputEmail4">Full Name</label>
-                      <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Full Name">
+      <div class="container">
+        <div class="row">
+          <?php
+            foreach ($db->query('SELECT *
+                                FROM GUITAR_BODY
+                                JOIN GUITAR ON GUITAR_BODY.guitar_id = GUITAR.id
+                                JOIN BODY   ON GUITAR_BODY.color_id  = BODY.id') as $row) 
+            {
+              $model = ucfirst($row['name']);
+              $color = ucfirst($row['color']);
+              echo '<form method="POST" action="checkout.php">
+                    <div class="col-lg-4">
+                      <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                          <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
+                          <h6 class="card-price text-center">$' . ($row['price']) . '</h6>
+                          <hr>
+                          <ul class="fa-ul" style="list-style-type:none">
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                          </ul>
+                          <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>
+                          <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
+                          <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>             
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group col-md-6" style="">
-                      <label for="inputPassword4">Email</label>
-                      <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <br><br>
-                  <button type="submit" class="btn btn-dark btn-lg" style="width: 15rem;height: 4rem;border-radius: 5rem;width: 20%;height: 15%;margin-left: 40%;margin-right: 40%;margin-bottom: 1rem;">Checkout</button>
-                </section>
-                <input type="hidden" id="txtModel" name="txtModel" value="<?php echo $model ?>"/>
-                <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
-              </form>
-          
+                  </form>';         
+            }?>
+        </div>
+      </div>
+    </section>
     <?php require_once('footer.php'); ?>
 </body>
 </html>
