@@ -33,27 +33,21 @@
 </head>
 <body>
     <?php require_once('navbar.php') ?>
-
-    <br>
-    <div class="container">
-    <table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">Guitar Model</th>
-      <th scope="col">Body Color</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><?php echo $model ?></td>
-      <td><?php echo $color ?></td>
-      <td><?php echo '$' . $price ?></td>
-    </tr>
-  </tbody>
-</table>
-                <input type="hidden" id="txtModel" name="txtModel" value="<?php echo $model ?>"/>
-                <input type="hidden" id="txtColor" name="txtColor" value="<?php echo $color ?>"/>
+    <section class="pricing py-5">
+            <div class="container">
+                          <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                  <h6 class="card-price text-center">Your Choice!</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong><?php echo $color ?></strong></li>
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong><?php echo $price ?></strong></li>                 
+                    </ul>
+                </div>
+              </div>
+    </div>
+</section>
 <button type="submit" class="btn btn-danger btn-lg" style="width: 10rem;height: 4rem;border-radius: 5rem;"><a href="products.php" style="color: white;">Cancel</a></button>
 <form  method="POST" action="insert.php">
 <section id="displayForm" class="container">
