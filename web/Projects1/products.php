@@ -29,24 +29,24 @@ $db = get_db();
             {
               $model = ucfirst($row['name']);
               $color = ucfirst($row['color']);
-              echo '<form class="col-lg-4" method="POST" action="checkout.php">
-                    <div class="col-lg-4">
+              echo '<div class="col-lg-4">
                       <div class="card mb-5 mb-lg-0">
                         <div class="card-body">
                           <img src="img/' . ucfirst($row['img']) . '" class="card-img-top" alt="...">
                           <h6 class="card-price text-center">$' . ($row['price']) . '</h6>
                           <hr>
                           <ul class="fa-ul" style="list-style-type:none">
+                            <form method="POST" action="checkout.php">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
                             <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
                             <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
+                            </form>
                           </ul>
                           <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>  
                         </div>
                       </div>
-                    </div>
-                  </form>';         
+                    </div>';         
             }?>
         </div>
       </div>
