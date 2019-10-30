@@ -33,11 +33,10 @@
 </head>
 <body>
     <?php require_once('navbar.php') ?>
-    <section class="pricing py-5">
       <div class="container">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
-            <h6 class="card-price text-center">Your Choice:</h6>
+            <h6 class="card-price text-center">Chosen Item:</h6>
             <hr>
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong><?php echo $model ?></strong></li>
@@ -47,9 +46,7 @@
           </div>
         </div>
       </div>
-    </section>
 <form  method="POST" action="insert.php">
-<section class="pricing py-5">
       <div class="container">
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
@@ -68,7 +65,6 @@
           </div>
         </div>
       </div>
-    </section>
 <!-- <section id="displayForm" class="container">
                   <div class="form-row">
                     
