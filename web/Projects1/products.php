@@ -38,11 +38,11 @@ $db = get_db();
                           <hr>
                           <ul class="fa-ul" style="list-style-type:none">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Guitar Model: <strong>' . ucfirst($row['name']) . '</strong></li>
+                            <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Body Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                            <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>
                           </ul>
-                          <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>
-                          <input class="fa-li" type="hidden" id="txtModel" name="txtModel" value="'. ucfirst($row['name']) . '"/>
-                          <input class="fa-li" type="hidden" id="txtColor" name="txtColor" value="' . ucfirst($row['color']) . '"/>             
+                          <button onclick="orderForm()" type="submit" class="btn btn-block btn-primary btn-lg">Order This Guitar!</button>  
                         </div>
                       </div>
                     </div>
