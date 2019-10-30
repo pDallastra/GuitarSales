@@ -34,7 +34,7 @@ $db = get_db();
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Email: <strong>' . $row['email'] . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Model: <strong>' . ucfirst($row['model']) . '</strong></li>
                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: $ <strong>' . ucfirst($row['price']) . '</strong></li>                     
+                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$' . ucfirst($row['price']) . '</strong></li>                     
                     </ul>
                 </div>
               </div>';
