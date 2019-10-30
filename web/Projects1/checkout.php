@@ -32,7 +32,7 @@
 </head>
 <body>
   <?php require_once('navbar.php') ?>
-  <section class="pricing py-5">
+  <section class="pricing py-5" style="margin-top: -2rem;">
     <div class="container">
       <div class="card mb-5 mb-lg-0">
         <div class="card-body">
