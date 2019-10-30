@@ -17,27 +17,29 @@ $db = get_db();
 </head>
 <body>
   <?php require_once('navbar.php'); ?>
-    <section class="pricing py-5">
-      <div class="container">
-        <?php
-          foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
-          {
-            echo '<div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                      <h6 class="card-price text-center">Order Successfully Done!</h6>
-                      <hr>
-                      <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Name: <strong>' . ucfirst($row['name']) . '</strong></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Email: <strong>' . $row['email'] . '</strong></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Model: <strong>' . ucfirst($row['model']) . '</strong></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Color: <strong>' . ucfirst($row['color']) . '</strong></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$' . ucfirst($row['price']) . '</strong></li>                     
-                      </ul>
-                    </div>
-                  </div>';
-          }?>
-    </div>
-  </section>
+    <div style="width: 100%;height:100rem;">
+      <section class="pricing py-5">
+        <div class="container">
+          <?php
+            foreach ($db->query('SELECT * FROM PRODUCT_ORDER ORDER BY id DESC LIMIT 1') as $row) 
+            {
+              echo '<div class="card mb-5 mb-lg-0">
+                      <div class="card-body">
+                        <h6 class="card-price text-center">Order Successfully Done!</h6>
+                        <hr>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-check"></i></span>Name: <strong>' . ucfirst($row['name']) . '</strong></li>
+                          <li><span class="fa-li"><i class="fas fa-check"></i></span>Email: <strong>' . $row['email'] . '</strong></li>
+                          <li><span class="fa-li"><i class="fas fa-check"></i></span>Model: <strong>' . ucfirst($row['model']) . '</strong></li>
+                          <li><span class="fa-li"><i class="fas fa-check"></i></span>Color: <strong>' . ucfirst($row['color']) . '</strong></li>
+                          <li><span class="fa-li"><i class="fas fa-check"></i></span>Price: <strong>$' . ucfirst($row['price']) . '</strong></li>                     
+                        </ul>
+                      </div>
+                    </div>';
+            }?>
+      </div>
+    </section>
+  </div>
 <?php require_once('footer.php'); ?>
 </body>
 </html>
